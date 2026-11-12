@@ -37,7 +37,7 @@ function update_script() {
   cd /opt/nuxt-net-monitoring
   systemctl stop nuxt-net-monitoring
   git pull --ff-only
-  NODE_VERSION="24" NODE_MODULE="pnpm@10.18.3" setup_nodejs
+  NODE_VERSION="26" NODE_MODULE="pnpm" setup_nodejs
   $STD pnpm install --frozen-lockfile
   $STD pnpm build
   $STD pnpm db:migrate

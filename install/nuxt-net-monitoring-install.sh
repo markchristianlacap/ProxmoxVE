@@ -31,7 +31,7 @@ rm -f "$SPEEDTEST_REPO_SCRIPT"
 $STD apt install -y speedtest
 msg_ok "Installed Ookla Speedtest CLI"
 
-NODE_VERSION="24" NODE_MODULE="pnpm@10.18.3" setup_nodejs
+NODE_VERSION="26" NODE_MODULE="pnpm" setup_nodejs
 
 msg_info "Starting PostgreSQL"
 systemctl enable -q --now postgresql
