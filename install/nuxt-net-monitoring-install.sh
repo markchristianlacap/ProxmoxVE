@@ -68,6 +68,8 @@ msg_ok "Installed and built application"
 
 msg_info "Creating service user"
 useradd --system --user-group --home-dir /var/lib/nuxt-net-monitoring --create-home --shell /usr/sbin/nologin nuxt-net-monitoring
+chown root:nuxt-net-monitoring /opt/nuxt-net-monitoring/.env
+chmod 640 /opt/nuxt-net-monitoring/.env
 msg_ok "Created service user"
 
 msg_info "Creating systemd service"
