@@ -6,7 +6,7 @@ source "$_cs_boot" 2>/dev/null || source <(curl -fsSL "${COMMUNITY_SCRIPTS_CORE_
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://github.com/markchristianlacap/nuxt-net-monitoring
 
-APP="Nuxt Network Monitoring"
+APP="Nuxt-Net-Monitoring"
 var_tags="${var_tags:-monitoring;network}"
 var_cpu="${var_cpu:-2}"
 var_ram="${var_ram:-4096}"
